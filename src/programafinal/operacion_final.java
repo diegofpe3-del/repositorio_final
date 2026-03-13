@@ -14,7 +14,7 @@ public class operacion_final {
 public static void main(String[] args){
 //declarando variables
 String cliente;
-double compra1,compra2,compra3,tc,pc;
+double compra1,compra2,compra3,tc,pc,desc;
 Scanner lectura=new Scanner(System.in);
 //entrada de datos
 System.out.print("Ingresar el nombre del cliente: ");
@@ -28,8 +28,10 @@ compra3=lectura.nextDouble();
 //proceso de datos
 tc = compra1+compra2+compra3;
 pc = tc/3;
+desc = tc * 0.1;
 //salida de datos
 System.out.println("El monto total de las compras es :" +tc);
 System.out.println("El promedio de compras es:" + pc);
+System.out.println("El descuento del total de compras es:" + desc);
 }        
 }
